@@ -1,0 +1,390 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+html,body {
+height: 100%;
+width: 100%;
+}
+
+body{
+   background-color: #111;
+   color: #fff;
+   font-family:gilroy;
+   overflow: hidden;
+}
+
+#cursor{
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color:whitesmoke;
+   position: absolute;
+    transition: all linear 0.2s;
+    mix-blend-mode: difference;z-index: 999;
+}
+
+
+nav{
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    /* background-color: red; */
+}
+
+nav h4{
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+nav #part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    display:none ;
+}
+
+.page1{
+    width: 100vw;
+    /* height: calc(100% - 5vw); */
+     /* background-color: rgba(255, 0, 0, 0.292);  */
+    padding: 2vw;
+    mix-blend-mode: difference;
+}
+
+.page1 h1{
+    font-size:12vw;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: gray;
+    /* mix-blend-mode: difference; */
+  
+}
+
+.page1 h1 span{
+    margin-left: 10vw;
+}
+
+.page1 h4{
+    margin-left:55vw ;
+    font-size: 1.6vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+.page1 #second-btm{
+   width: 100vw;
+   height: 8vw;
+   display: flex;
+   align-items:start;
+   justify-content: end;
+   padding: 3vw 5vw;
+}
+
+
+/* footer */
+ #footer-page1{
+    width: 99vw;
+    height: 10vw;
+    padding: 2vw 2vw;
+    mix-blend-mode: difference;
+}
+
+ #footer-page1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-page1 h4{
+    font-weight: 400;
+}
+
+#footer-page1 .boxes{
+    display: flex;
+    justify-content: center;
+    gap: 0.2vw;
+}
+
+
+#footer-page1 .round{
+width: 2.5vw;
+height: 2.5vw;
+background-color: gray;
+border-radius: 50vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+#footer-page1 .round i{
+    font-size: 2vw;
+    font-weight: 400;
+    color: #111;
+}
+
+
+/* page2 */
+
+.page2 hr{
+  
+}
+
+.page2{
+    width: 100vw;
+padding: 0vw 2vw;
+}
+
+.page2 hr{
+    width: 90%;
+    color: gray;
+}
+
+.page2 .elem {
+    width: 90%;
+    height: 15vw;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: translatex(50% - 50%);
+    transition: all linear 0.2s;
+    cursor: pointer;
+    color: gray;
+    
+  }
+  
+  h5 {
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 6vw;
+    font-weight: 500;
+  }
+
+ 
+  
+  .elem img {
+    width: 25vw;
+    height: 25vw;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transform-origin:center;
+    border-radius: 1vw;
+    /* mix-blend-mode: difference;
+   */
+   z-index: 999;
+  }
+
+  .page2 #button{
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 0.2vw 1vw;
+    border-radius: 50vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+
+  .page2 #button:hover{
+    background-color: white;
+    color: #111;
+  }
+
+
+  .scrollmain{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+   
+  }
+
+
+  .scroll{
+    /* width: 100vw; */
+    height: 16vw;
+    /* background-color: red; */
+    margin-top: 15vw;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 2vw;
+  }
+
+  .scroll img{
+    width: 10vw;
+    height: 5vw;
+  }
+
+  /* page3 */
+
+  .page3{
+    width: 100vw;
+    /* background-color: green; */
+  }
+
+  .page3 #part1{
+    width:100vw;
+    height: 50vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1vw 3vw;
+    gap: 1vw;
+  }
+
+  .page3 #part1 img{
+    width: 25vw;
+  }
+
+  .page3 #content{
+    width:35vw;
+    line-height:2vw;
+  }
+
+  .page3 #content h4{
+    color: gray;
+  }
+
+  .page3 #content p{
+ margin-top: 1vw;
+  }
+
+  .page3 #content button{
+    padding:0.5vw 2vw;
+border-radius: 50vw;
+border: none;
+border: 1px solid white;
+background-color: #111;
+color: white;
+margin-top: 1vw;
+  }
+
+  .page3 #content button:hover{
+    background-color: #fff;
+    color: #111;
+  }
+
+  .page3 #page3-btm{
+    padding-left: 2vw;
+  }
+  .page3 h4{
+    color: gray;
+  }
+
+  /* lastfooter */
+
+  #lastfooter{
+    width: 100vw;
+    height: 12vw;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+  }
+
+  #lastfooter #part1{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  #lastfooter #part2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  #lastfooter h4{
+    font-weight: 600;
+  }
+
+  #lastfooter  h4:hover{
+    border-bottom: 1px solid #fff;
+    color: gray;
+    cursor: pointer;
+  }
+
+
+
+  /*open*/
+
+  #open{
+    width: 100vw;
+    min-height: 100vw;
+    /* background-color: rgba(255, 0, 0, 0.484); */
+    /* padding: 0vw 2vw; */
+    display: none;
+  }
+  
+  #open h1{
+font-size: 8vw;
+color: gray;
+font-weight: 500;
+padding: 2vw 2vw;
+  }
+
+  #open .imgboxes{
+    width: 100vw;
+   /* background-color:yellow; */
+   display: flex;
+   justify-content:space-between;
+   padding: 1vw 2vw;
+   flex-wrap: wrap;
+  
+  }
+
+
+  #open .imgboxes .box{
+    width: 45vw;
+    height: 40vw;
+    /* background-color: green; */
+    border-radius: 1vw;
+    overflow: hidden;
+  }
+
+
+  .imgboxes .box #imgbox{
+    width: 100%;
+    height: 80%;
+    border-radius: 1vw;
+    /* background-color: gray; */
+    overflow: hidden;
+  }
+
+  .box #imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .imgboxes .box #titlebox{
+    width: 100%;
+    height:20%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+  }
+
+  .box #titlebox h2{
+    font-size: 3vw;
+    color: gray;
+  }
+
+ 
